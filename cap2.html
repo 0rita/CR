@@ -1,0 +1,132 @@
+<html>
+
+<head>
+   
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta lang="en">
+    <meta name="Description" content="Trabalhos de Ana Rita Silva Ribeiro, UC de Web Design" />
+   <title>Ciclone </title>
+   <link rel="shortcut icon" href="../assets/images/M guy.png" type="image/x-icon" />
+   <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body class="cap2">
+    <div id="page2">
+
+        <header>
+            <nav><img id="riscasmenu" src="../assets/images/menu_ondas.png" alt="">
+                <a href="../index.html"> <img id="logo" src="../assets/images/logo.png" alt="logo da ciclone">
+               </a> 
+               <ul>
+                <li> <a href="../index.html#sinopsesection">Sinopse</a> </li>
+                <li><a href="../index.html#capitulossection">Capítulos</a></li>
+                <li><a href="../sobre.html" target="_self">Sobre</a></li>
+               </ul>
+             </nav>
+ 
+    <!-- efeito sticky da navbar -->
+    <script src="../Ciclone/assets/JS/script.js"></script>
+ 
+
+        </header>
+    </div>
+
+
+
+        <main>  
+
+            <div class="moldura"> <img id="dinno" src="../assets/images/dinno.jpg" alt="dinossauro">  </div>
+           
+           
+        
+              
+
+              <p id="titulocapitulo2"> •19 DE AGOSTO DE 2000•</p> 
+
+
+              
+              
+              <section class="sec1">
+                <div class="text sec1-text">
+                  <span contenteditable=true>Tenho boas memórias do tempo que passámos no parque, em Berlim. Lembro-me de dar beijos no comboio fantasma, de ser apanhado a fumar, pela minha mãe, na cabina da roda-gigante, de espreitar os visitantes em ângulos que só eu conhecia...
+                    Abriram parques mais modernos, mais voltados para o futuro. E os jovens de Leste, depois de atravessar o Muro, precisavam do futuro. Desesperadamente. O nosso parque de diversões em Berlim fechou. Já não tínhamos lugar. Nós éramos o passado.
+                  </span>
+                </div>
+              </section>
+              
+              <div> <img id="pato" src="../assets/images/pato.png" alt=""></div>
+              
+              <script>
+                const sec1 = document.querySelector('.sec1');
+                const textSpan = document.querySelector('.text > span');
+              
+                window.addEventListener('scroll', function () {
+                  const st = window.pageYOffset || document.documentElement.scrollTop;
+                  const fadeInThreshold = 6300; // Defina aqui a quantidade de scroll antes do início do aparecimento
+                  const fadeOutStart = 7400; // Defina aqui a quantidade de scroll antes do início do desaparecimento
+              
+                  // Calcula a opacidade com base no scrollTop
+                  let opacity;
+              
+                  if (st < fadeInThreshold) {
+                    opacity = 0;
+                  } else if (st < fadeOutStart) {
+                    opacity = (st - fadeInThreshold) / (fadeOutStart - fadeInThreshold);
+                  } else {
+                    opacity = 1;
+                  }
+              
+                  // Ajusta a variável --progress e a opacidade do texto
+                  sec1.style.setProperty('--progress', opacity);
+                  textSpan.style.opacity = 1 - opacity;
+                });
+              </script>
+              
+              
+              
+              
+              
+
+
+              </script>
+              
+              <!-- <section id="sec2">
+                <div class="text">
+                  <span contenteditable=true>Abriram parques mais modernos, mais voltados para o futuro. E os jovens de Leste, depois de atravessar o Muro, precisavam do futuro. Desesperadamente. O nosso parque de diversões em Berlim fechou. Já não tínhamos lugar. Nós éramos o passado.</span>
+                </div>
+              </section> -->
+           
+              <script src="../assets/JS/script.js"></script>
+              
+              
+              
+              
+
+            <!-- <div class="textosobre">
+<p>Tenho boas memórias do tempo que passámos no parque, em Berlim.
+     Lembro-me de dar beijos no comboio fantasma, de ser apanhado a fumar, pela minha mãe, na cabina da roda-gigante, de espreitar os visitantes em ângulos que só eu conhecia...
+
+    Mas depois começaram as avarias constantes. Primeiro foi a Ciclone.
+     Um escândalo, jornais, processos, indemnizações... Depois foram as outras atrações.</p> 
+
+    <p>Abriram parques mais modernos, mais voltados para o futuro. 
+E os jovens de Leste, depois de atravessar o Muro, precisavam do futuro. Desesperadamente.
+
+O nosso parque de diversões em Berlim fechou. Já não tínhamos lugar.
+
+Nós éramos o passado.</p>
+</div> -->
+
+
+        </main>
+
+        <footer>
+            <a href="#top"> 
+            </a> 
+    
+        </footer>
+</body>
+
+</html>
